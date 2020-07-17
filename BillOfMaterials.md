@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|1/2 x 3/4 Inch Bolt|1|$0.60|https://www.mcmaster.com/92620A709/|
+|Total: |1|$0.60| |
+
+ 3xCOG MSRP: $1.79

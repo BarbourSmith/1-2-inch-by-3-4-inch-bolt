@@ -8,6 +8,104 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.14202049780380674,
+            "y": 0.24521072796934865,
+            "uniqueID": 130535,
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 6
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 0.8
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.27379209370424595,
+            "y": 0.2298850574712644,
+            "uniqueID": 572591,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 0.34375
+                }
+            ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.4282576866764275,
+            "y": 0.3065134099616858,
+            "uniqueID": 424725,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5424597364568082,
+            "y": 0.3218390804597701,
+            "uniqueID": 462757,
+            "ioValues": [],
+            "selectedColorIndex": 0
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.27013177159590046,
+            "y": 0.5747126436781609,
+            "uniqueID": 274613,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": -0.75
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.13616398243045388,
+            "y": 0.7394636015325671,
+            "uniqueID": 146661,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 0.5
+                }
+            ]
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.7035139092240117,
+            "y": 0.42528735632183906,
+            "uniqueID": 634092,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "1/2 x 3/4 Inch Bolt",
+                "numberNeeded": 1,
+                "costUSD": 0.596,
+                "source": "https://www.mcmaster.com/92620A709/",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +113,57 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 130535,
+            "ap2ID": 572591
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 572591,
+            "ap2ID": 424725
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 424725,
+            "ap2ID": 462757
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 462757,
+            "ap2ID": 634092
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 274613,
+            "ap2ID": 424725
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 146661,
+            "ap2ID": 274613
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 634092
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "0.1"
 }
