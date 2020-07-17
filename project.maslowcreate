@@ -55,15 +55,6 @@
             ]
         },
         {
-            "atomType": "Color",
-            "name": "Color",
-            "x": 0.5424597364568082,
-            "y": 0.3218390804597701,
-            "uniqueID": 462757,
-            "ioValues": [],
-            "selectedColorIndex": 0
-        },
-        {
             "atomType": "Extrude",
             "name": "Extrude",
             "x": 0.27013177159590046,
@@ -75,6 +66,15 @@
                     "ioValue": -0.75
                 }
             ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5395314787701317,
+            "y": 0.3448275862068966,
+            "uniqueID": 462757,
+            "ioValues": [],
+            "selectedColorIndex": "11"
         },
         {
             "atomType": "Circle",
@@ -137,17 +137,17 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 462757,
-            "ap2ID": 634092
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "3D shape 1",
             "ap2Primary": false,
             "ap1ID": 274613,
             "ap2ID": 424725
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 462757,
+            "ap2ID": 634092
         },
         {
             "ap1Name": "geometry",
